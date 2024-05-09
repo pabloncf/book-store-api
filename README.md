@@ -4,7 +4,7 @@ This application is an API where you can register Books and Stores. Each book ca
 
 ## Technologies Used
 - Laravel 11
-- PHP 8.2
+- PHP >= 8.2
 - Sanctum for authentication
 - Laradock for Docker management
 - Docker
