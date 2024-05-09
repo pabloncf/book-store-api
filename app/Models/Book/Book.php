@@ -20,7 +20,7 @@ class Book extends Model
     ];
 
     # Relation many-to-many with store table
-    public function store(): BelongsToMany
+    public function stores(): BelongsToMany
     {
         return $this->belongsToMany(Store::class);
     }

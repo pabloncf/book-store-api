@@ -22,7 +22,9 @@ Route::middleware('auth:sanctum')->group(function () {
 Route::middleware('auth:sanctum')->group(function () {
     # Book routes
     Route::apiResource('books', BookController::class);
+    Route::post('books/{book}/add-store', [BookController::class, 'addStoreToBook']);
 
     # Stores routes
     Route::apiResource('stores', StoreController::class);
+    Route::post('stores/{store}/add-book', [StoreController::class, 'addBookToStore']);
 });

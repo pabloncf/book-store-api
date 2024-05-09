@@ -12,9 +12,9 @@ return new class extends Migration {
     {
         Schema::create('book_store', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_store')->constrained()->onDelete('cascade');
-            $table->integer('id_book')->constrained()->onDelete('cascade');
-            $table->primary(['id_store', 'id_book']);
+            $table->integer('store_id')->constrained()->onDelete('cascade');
+            $table->integer('book_id')->constrained()->onDelete('cascade');
+            $table->primary(['store_id', 'book_id']);
             $table->timestamps();
         });
     }
