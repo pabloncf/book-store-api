@@ -15,6 +15,11 @@ This application is an API where you can register Books and Stores. Each book ca
 2. Use Laradock to set up the Laravel environment with Docker.
 3. Run migrations and seeders to set up the database.
 
+## Usage
+### Headers
+* Content-Type `application/json`
+* Accept `application/json`
+
 ## Authentication
 
 To perform login, send a POST request to `/login` with the following credentials:
