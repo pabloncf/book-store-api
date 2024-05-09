@@ -8,6 +8,7 @@ This application is an API where you can register Books and Stores. Each book ca
 - Sanctum for authentication
 - Laradock for Docker management
 - Docker
+- Postgres (You can run it with MySQL, but I did with Postgres)
 
 ## Setup and Installation
 1. Clone the repository.

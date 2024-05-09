@@ -12,10 +12,12 @@ return new class extends Migration {
     {
         Schema::create('book_store', function (Blueprint $table) {
             $table->id();
-            $table->integer('store_id')->constrained()->onDelete('cascade');
-            $table->integer('book_id')->constrained()->onDelete('cascade');
-            $table->primary(['store_id', 'book_id']);
+            $table->unsignedBigInteger('store_id');
+            $table->unsignedBigInteger('book_id');
             $table->timestamps();
+
+            $table->foreign('store_id')->references('id')->on('store');
+            $table->foreign('book_id')->references('id')->on('book');
         });
     }
 
